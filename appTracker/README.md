@@ -1,6 +1,6 @@
 # Project Page
 
-A project page for our ACM MM 2022 paper "mmBody Benchmark: 3D Body Reconstruction Dataset and Analysis for Millimeter Wave Radar".
+A project page for our ACM MM 2022 paper "APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos".
 
 # Copyright
 
