@@ -1,0 +1,121 @@
+<html>
+<head>
+  <title>APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js" type="module"></script>
+</head>
+
+<body> 
+
+<div class="container">
+  <h1><span style="font-size:42px">APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos</span></h1>
+  <br>
+  <table width="1000px" align="center">
+    <tr>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="https://infZhou.github.io/">Tao Zhou</a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="">Wenhan Luo</a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="">Zhiguo Shi</a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="">Jiming Chen</a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="">Qi Ye</a></span>
+        </center>
+      </td>
+  </table>
+  <br>
+  <table>
+    <tr>
+      <span style="font-size: 22px">Zhejiang University, Sun Yat-sen University</span>
+    </tr>
+    <br><br>
+    <tr>
+      <span style="font-size: 20px">ACM MM 2022</span>
+    </tr>
+  </table>
+  <br>
+  <table width="500px" align="center">
+    <tr>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:24px"><a href="">[Paper (coming soon!)]</a></span>
+        </center>
+      </td>
+  </table>
+  
+  <p>
+    <div class="row">
+      <img src="resources/Fig2_pipeline.png" style="width:80%; padding-top:35px;">
+    </div>
+  Overview of our method.
+  </p>
+  <p>
+    <div class="row">
+      <img src="resources/Fig4_IDF1.png" style="width:80%; padding-top:35px;">
+    </div>
+  Comparison between our method and several state-of-the-art methods on the MOT17 validation set with different frame rate inputs. Details can be found in the paper.
+  </p>
+  <p>
+    <div class="row">
+      <img src="resources/Fig6_Qualitative_resluts.png" style="width:80%; padding-top:35px;">
+    </div>
+  Qualitative results of our method. Each row shows three consecutive frames. Bounding boxes with different colors represent different identities. We highlight recognized appearing objects by indicating the predicted APP scores on the right top of corresponding bounding boxes. Pink arrows indicate displacement estimations, which are not reliable for appearing objects. White arrows indicate the updated velocity estimations. It can be observed that emerging objects are accurately recognized and the identities of objects involved in occlusions are preserved.
+  </p>
+</div>
+
+</br>
+
+<div class="container">
+  <h1>Abstract</h1>
+    <p align="justify">
+      Multi-object tracking (MOT) in the scenario of low-frame-rate videos is a promising solution for deploying MOT methods on edge devices with limited computing, storage, power, and transmitting bandwidth. Tracking with a low frame rate poses particular challenges in the association stage as objects in two successive frames typically exhibit much quicker variations in locations, velocities, appearances, and visibilities than those in normal frame rates. In this paper, we observe severe performance degeneration of many existing association strategies caused by such variations. Though optical-flow-based methods like CenterTrack can handle the large displacement to some extent due to their large receptive field, the temporally local nature makes them fail to give correct displacement estimations of objects whose visibility flip within adjacent frames. To overcome the local nature of optical-flow-based methods, we propose an online tracking method by extending the CenterTrack architecture with a new head, named APP, to recognize unreliable displacement estimations. Then we design a two-stage association policy where displacement estimations or historical motion cues are leveraged in the corresponding stage according to APP predictions. Our method, with little additional computational overhead, shows robustness in preserving identities in low-frame-rate video sequences. Experimental results on public datasets in various low-frame-rate settings demonstrate the advantages of the proposed method.
+    </p> 
+</div>   
+
+</br>
+
+
+
+</br>
+
+<div class="container">
+  <h1> BibTeX</h1>
+  <table align=center width=1000px height=250px>
+  <tr>
+    <td align=left width=300px><a href=""><img class="layered-paper-big" style="height:180px" src="./resources/paper_preview.png"/></a></td>
+    <td width=700px style="color: #4d4b59; font-size:12pt">
+                @inproceedings{zhou2022apptracker,<br>
+                  title={APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos.},<br>
+                  author={Tao Zhou, Wenhan Luo, Zhiguo Shi, Jiming Chen, Qi Ye},<br>
+                  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},<br>
+                  pages={TBD},<br>
+                  year={2022}}
+    </td>
+  </tr>
+  </table>
+</div>
+
+</br>
+
+<div class="containersmall">
+  <p>Contact: <a href="zhoutao2015@zju.edu.cn">Tao Zhou</a></p>
+  <p>Page template borrowed from <a href="https://gkioxari.github.io/usl/index.html">gkioxari</a></p>
+</div>
+ 
+</body>
+</html>
