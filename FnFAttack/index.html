@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos</title>
+  <title>F&F Attack: Adversarial Attack against Multiple Object Trackers by Inducing False Negatives and False Positives</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js" type="module"></script>
 </head>
@@ -8,7 +8,7 @@
 <body> 
 
 <div class="container">
-  <h1><span style="font-size:42px">APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos</span></h1>
+  <h1><span style="font-size:42px">F&F Attack: Adversarial Attack against Multiple Object Trackers by Inducing False Negatives and False Positives</span></h1>
   <br>
   <table width="1000px" align="center">
     <tr>
@@ -19,7 +19,17 @@
       </td>
       <td align=center width=160px>
         <center>
+        <span style="font-size:24px"><a href="https://person.zju.edu.cn/yeqi">Qi Ye<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
           <span style="font-size:24px"><a href="https://whluo.github.io/">Wenhan Luo<sup>2</sup></a></span>
+        </center>
+      </td>
+        <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="">Kaihao Zhang<sup>3</sup></a></span>
         </center>
       </td>
       <td align=center width=160px>
@@ -32,20 +42,15 @@
         <span style="font-size:24px"><a href="">Jiming Chen<sup>1</sup></a></span>
         </center>
       </td>
-      <td align=center width=160px>
-        <center>
-        <span style="font-size:24px"><a href="https://person.zju.edu.cn/yeqi">Qi Ye<sup>1</sup></a></span>
-        </center>
-      </td>
   </table>
   <br>
   <table>
     <tr>
-      <span style="font-size: 22px"><sup>1</sup>Zhejiang University, <sup>2</sup>Sun Yat-sen University</span>
+      <span style="font-size: 22px"><sup>1</sup>Zhejiang University, <sup>2</sup>Sun Yat-sen University</span>, <sup>3</sup>Australian National University</span>
     </tr>
     <br><br>
     <tr>
-      <span style="font-size: 20px">ACM MM 2022</span>
+      <span style="font-size: 20px">ICCV 2023</span>
     </tr>
   </table>
   <br>
@@ -53,12 +58,12 @@
     <tr>
       <td align=center width=100px>
         <center>
-          <span style="font-size:24px"><a href="../folder/Zhou_APPTracker_Improving_Tracking_Multiple_Objects_in_Low-Frame-Rate_Videos_MM_2022.pdf">[Paper]</a></span>
+          <span style="font-size:24px"><a href="../folder/">[Paper (Coming soon)]</a></span>
         </center>
       </td>
        <td align=center width=100px>
         <center>
-          <span style="font-size:24px"><a href="https://youtu.be/Rzbda9vJofs">[Video (On YouTube)]</a></span>
+          <span style="font-size:24px"><a href="">[Video (Coming soon)]</a></span>
         </center>
       </td>
   </table>
@@ -67,30 +72,30 @@
 <div class="container">
   <h1>Abstract</h1>
     <p align="justify" style="font-size:20px">
-      Multi-object tracking (MOT) in the scenario of low-frame-rate videos is a promising solution for deploying MOT methods on edge devices with limited computing, storage, power, and transmitting bandwidth. Tracking with a low frame rate poses particular challenges in the association stage as objects in two successive frames typically exhibit much quicker variations in locations, velocities, appearances, and visibilities than those in normal frame rates. In this paper, we observe severe performance degeneration of many existing association strategies caused by such variations. Though optical-flow-based methods like CenterTrack can handle the large displacement to some extent due to their large receptive field, the temporally local nature makes them fail to give correct displacement estimations of objects whose visibility flip within adjacent frames. To overcome the local nature of optical-flow-based methods, we propose an online tracking method by extending the CenterTrack architecture with a new head, named APP, to recognize unreliable displacement estimations. Then we design a two-stage association policy where displacement estimations or historical motion cues are leveraged in the corresponding stage according to APP predictions. Our method, with little additional computational overhead, shows robustness in preserving identities in low-frame-rate video sequences. Experimental results on public datasets in various low-frame-rate settings demonstrate the advantages of the proposed method.
+      Multi-object tracking (MOT) aims to build moving trajectories for number-agnostic objects. Modern multi-object trackers commonly follow the tracking-by-detection strategy. Therefore, fooling detectors can be an effective solution but it usually requires attacks in multiple successive frames, resulting in low efficiency. Attacking association processes improves efficiency but may require model-specific design, leading to poor generalization. In this paper, we propose a novel False negative and False positive attack (F&F attack) mechanism: it perturbs the input image to erase original detections and to inject deceptive false alarms around original ones while integrating the association attack implicitly. The mechanism can produce effective identity switches against multi-object trackers by only fooling detectors in a few frames. To demonstrate the flexibility of the mechanism, we deploy it to three multi-object trackers (ByteTrack, SORT, and CenterTrack) which are enabled by two representative detectors (YOLOX and CenterNet). Comprehensive experiments on MOT17 and MOT20 datasets show that our method significantly outperforms existing attackers, revealing the vulnerability of the tracking-by-detection paradigm to detection attacks.
     </p> 
 </div>
 <div class="container">
   
     <div class="row">
-      <img src="resources/Fig2_pipeline.png" style="width:100%; padding-top:35px; padding-bottom:10px">
+      <img src="resources/Main_Figure.png" style="width:100%; padding-top:35px; padding-bottom:10px">
     </div>
   <p align="justify" style="font-size:22px">
   Overview of our method.
   </p>
   
    <div class="row">
-     <img src="resources/Fig4_IDF1.png" style="width:40%; padding-top:35px; padding-bottom:10px">
+     <img src="resources/Main_Results.png" style="width:40%; padding-top:35px; padding-bottom:10px">
    </div>
   <p align="justify" style="font-size:22px">
-  Comparison between our method and several state-of-the-art methods on the MOT17 validation set with different frame rate inputs. We generate low-frame-rate videos by extracting frames from original videos through fixed intervals. A higher sampling intervals leads to a lower frame rate.
+  Main results.
   </p>
   
    <div class="row">
-     <img src="resources/Fig6_Qualitative_resluts.png" style="width:100%; padding-top:35px; padding-bottom:10px">
+     <img src="resources/Qualitative_resluts.png" style="width:100%; padding-top:35px; padding-bottom:10px">
    </div>
   <p align="justify" style="font-size:22px">
-  Qualitative results of our method. Each row shows three consecutive frames. Bounding boxes with different colors represent different identities. We highlight recognized appearing objects by indicating the predicted APP scores on the right top of corresponding bounding boxes. Pink arrows indicate displacement estimations, which are not reliable for appearing objects. White arrows indicate the updated velocity estimations. It can be observed that emerging objects are accurately recognized and the identities of objects involved in occlusions are preserved.
+   Qualitative results of our method. For each deployment, we list the detection results (i.e., intermediate products) in the first line and the association results (i.e., final outputs of trackers) in the second line. Tracking identities are coded by color.
   </p>
 </div>
 </br>
@@ -109,11 +114,11 @@
   <tr>
     <td align=left width=300px><a href=""><img class="layered-paper-big" style="height:180px" src="./resources/paper_preview.png"/></a></td>
     <td width=700px style="color: #4d4b59; font-size:12pt">
-                @inproceedings{zhou2022apptracker,<br>
-                  title={APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos.},<br>
-                  author={Tao Zhou, Wenhan Luo, Zhiguo Shi, Jiming Chen, Qi Ye},<br>
-                  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},<br>
-                  year={2022}}
+                @inproceedings{zhou2023fnfattack,<br>
+                  title={F&F Attack: Adversarial Attack against Multiple Object Trackers by Inducing False Negatives and False Positives.},<br>
+                  author={Tao Zhou, Qi Ye, Wenhan Luo, Kaihao Zhang, Zhiguo Shi, Jiming Chen},<br>
+                  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},<br>
+                  year={2023}}
     </td>
   </tr>
   </table>
