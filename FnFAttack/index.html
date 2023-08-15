@@ -1,0 +1,130 @@
+<html>
+<head>
+  <title>APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js" type="module"></script>
+</head>
+
+<body> 
+
+<div class="container">
+  <h1><span style="font-size:42px">APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos</span></h1>
+  <br>
+  <table width="1000px" align="center">
+    <tr>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="https://infZhou.github.io/">Tao Zhou<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="https://whluo.github.io/">Wenhan Luo<sup>2</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+          <span style="font-size:24px"><a href="">Zhiguo Shi<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="">Jiming Chen<sup>1</sup></a></span>
+        </center>
+      </td>
+      <td align=center width=160px>
+        <center>
+        <span style="font-size:24px"><a href="https://person.zju.edu.cn/yeqi">Qi Ye<sup>1</sup></a></span>
+        </center>
+      </td>
+  </table>
+  <br>
+  <table>
+    <tr>
+      <span style="font-size: 22px"><sup>1</sup>Zhejiang University, <sup>2</sup>Sun Yat-sen University</span>
+    </tr>
+    <br><br>
+    <tr>
+      <span style="font-size: 20px">ACM MM 2022</span>
+    </tr>
+  </table>
+  <br>
+  <table width="500px" align="center">
+    <tr>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:24px"><a href="../folder/Zhou_APPTracker_Improving_Tracking_Multiple_Objects_in_Low-Frame-Rate_Videos_MM_2022.pdf">[Paper]</a></span>
+        </center>
+      </td>
+       <td align=center width=100px>
+        <center>
+          <span style="font-size:24px"><a href="https://youtu.be/Rzbda9vJofs">[Video (On YouTube)]</a></span>
+        </center>
+      </td>
+  </table>
+  
+</div>
+<div class="container">
+  <h1>Abstract</h1>
+    <p align="justify" style="font-size:20px">
+      Multi-object tracking (MOT) in the scenario of low-frame-rate videos is a promising solution for deploying MOT methods on edge devices with limited computing, storage, power, and transmitting bandwidth. Tracking with a low frame rate poses particular challenges in the association stage as objects in two successive frames typically exhibit much quicker variations in locations, velocities, appearances, and visibilities than those in normal frame rates. In this paper, we observe severe performance degeneration of many existing association strategies caused by such variations. Though optical-flow-based methods like CenterTrack can handle the large displacement to some extent due to their large receptive field, the temporally local nature makes them fail to give correct displacement estimations of objects whose visibility flip within adjacent frames. To overcome the local nature of optical-flow-based methods, we propose an online tracking method by extending the CenterTrack architecture with a new head, named APP, to recognize unreliable displacement estimations. Then we design a two-stage association policy where displacement estimations or historical motion cues are leveraged in the corresponding stage according to APP predictions. Our method, with little additional computational overhead, shows robustness in preserving identities in low-frame-rate video sequences. Experimental results on public datasets in various low-frame-rate settings demonstrate the advantages of the proposed method.
+    </p> 
+</div>
+<div class="container">
+  
+    <div class="row">
+      <img src="resources/Fig2_pipeline.png" style="width:100%; padding-top:35px; padding-bottom:10px">
+    </div>
+  <p align="justify" style="font-size:22px">
+  Overview of our method.
+  </p>
+  
+   <div class="row">
+     <img src="resources/Fig4_IDF1.png" style="width:40%; padding-top:35px; padding-bottom:10px">
+   </div>
+  <p align="justify" style="font-size:22px">
+  Comparison between our method and several state-of-the-art methods on the MOT17 validation set with different frame rate inputs. We generate low-frame-rate videos by extracting frames from original videos through fixed intervals. A higher sampling intervals leads to a lower frame rate.
+  </p>
+  
+   <div class="row">
+     <img src="resources/Fig6_Qualitative_resluts.png" style="width:100%; padding-top:35px; padding-bottom:10px">
+   </div>
+  <p align="justify" style="font-size:22px">
+  Qualitative results of our method. Each row shows three consecutive frames. Bounding boxes with different colors represent different identities. We highlight recognized appearing objects by indicating the predicted APP scores on the right top of corresponding bounding boxes. Pink arrows indicate displacement estimations, which are not reliable for appearing objects. White arrows indicate the updated velocity estimations. It can be observed that emerging objects are accurately recognized and the identities of objects involved in occlusions are preserved.
+  </p>
+</div>
+</br>
+
+   
+
+</br>
+
+
+
+</br>
+
+<div class="container">
+  <h1> BibTeX</h1>
+  <table align=center width=1000px height=250px>
+  <tr>
+    <td align=left width=300px><a href=""><img class="layered-paper-big" style="height:180px" src="./resources/paper_preview.png"/></a></td>
+    <td width=700px style="color: #4d4b59; font-size:12pt">
+                @inproceedings{zhou2022apptracker,<br>
+                  title={APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos.},<br>
+                  author={Tao Zhou, Wenhan Luo, Zhiguo Shi, Jiming Chen, Qi Ye},<br>
+                  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},<br>
+                  year={2022}}
+    </td>
+  </tr>
+  </table>
+</div>
+
+</br>
+
+<div class="containersmall">
+  <p>Contact: <a href="https://infzhou.github.io/">Tao Zhou</a>, <a href="https://person.zju.edu.cn/yeqi">Qi Ye</a></p>
+  <p>Page template borrowed from <a href="https://gkioxari.github.io/usl/index.html">gkioxari</a></p>
+</div>
+ 
+</body>
+</html>
