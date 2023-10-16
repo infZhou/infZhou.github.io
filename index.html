@@ -1,215 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+// Modify the `PUBLICATIONS` object
 
-    <title>Tao Zhou</title>
+const PUBLICATIONS = [
 
-    <meta name="author" content="Tao Zhou" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {
+    title:
+      "F&F Attack: Adversarial Attack against Multiple Object Trackers by Inducing False Negatives and False Positives",
+    authors:
+      "Tao Zhou, Wenhan Luo, Qi Ye, Kaihao Zhang, Zhiguo Shi, Jiming Chen",
+    image: "/resource/FnFAttack_Demo.gif",
+    conference: "ICCV 2023",
+    links: {
+      "project page": "https://infzhou.github.io/FnFAttack/index.html",
+      arxiv: "",
+      pdf: "https://infzhou.github.io/folder/ZhouTao_F&F_Attack_ICCV2023_main_text+supp.pdf",
+      supp: "",
+      video: "https://infzhou.github.io/folder/Video_F&F_Attack_ICCV_2023.mp4",
+      code: "https://github.com/infZhou/FnF_Attack",
+    },
+    badges: ["CCF A"],
+  },
+  {
+    title:
+      "APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos",
+    authors: "Tao Zhou, Wenhan Luo, Zhiguo Shi, Jiming Chen, Qi Ye",
+    image: "/resource/APPTrack_Demo.gif",
+    conference: "ACM MM 2022",
+    links: {
+      "project page": "https://infzhou.github.io/appTracker/",
+      arxiv: "",
+      pdf: "https://infzhou.github.io/folder/Zhou_APPTracker_Improving_Tracking_Multiple_Objects_in_Low-Frame-Rate_Videos_MM_2022.pdf",
+      supp: "",
+      video: "https://youtu.be/Rzbda9vJofs",
+      code: "",
+    },
+    badges: ["CCF A"],
+  },
+  {
+    title:
+      "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
+    authors:
+      "Tao Zhou, Qi Ye, Yuyi Sun, Haizhou Ran, Zhiguo Shi, Jiming Chen",
+    image: "",
+    conference: "Submitted to IJCV, under review.",
+    links: {
+      "project page": "",
+      arxiv: "",
+      pdf: "",
+      supp: "",
+      video: "",
+      code: "",
+    },
+    badges: [""],
+  },
+  {
+    title:
+      "Gateway Planning for Hybrid LoRa Networks.",
+    authors:
+      "Tao Zhou, Yuyi Sun, Shibo He, Zhiguo Shi, Jiming Chen, Zhen Tao",
+    image: "",
+    conference: "IEEE International Conference on Internet of Things (iThings), 2019",
+    links: {
+      "project page": "/resource/ithings_figure.png",
+      arxiv: "",
+      pdf: "https://ieeexplore.ieee.org/abstract/document/8875418",
+      supp: "",
+      video: "",
+      code: "",
+    },
+    badges: ["Best Paper Award"],
+  },
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<!--    <link rel="icon" type="image/png" href="images/zju_icon.png" />-->
-    <script src="pubs.js"></script>
-  </head>
+];
 
-  <body>
-    <table
-      style="
-        width: 100%;
-        max-width: 800px;
-        border: 0px;
-        border-spacing: 0px;
-        border-collapse: separate;
-        margin-right: auto;
-        margin-left: auto;
-      "
-    >
-      <tbody>
-        <tr style="padding: 0px">
-          <td style="padding: 0px">
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr style="padding: 0px">
-                  <td style="padding: 2.5%; width: 30%; max-width: 30%">
-                    <a href="resource/avatar.jpg"
-                      ><img
-                        style="width: 100%; max-width: 100%"
-                        alt="profile photo"
-                        src="images/me.jpg"
-                        class="hoverZoomLink"
-                    /></a>
-                  </td>
-                  <td style="padding: 2.5%; width: 63%; vertical-align: middle">
-                    <p style="text-align: center">
-                      <name>Tao Zhou </name>
-                    </p>
-                    <p style="text-align: center">
-                      Ph.D Candidate <br />
-                      Zhejiang University<br />
-                    </p>
-                    <p style="text-align: center">
-                      <!-- Email: qi.ye at zju dot edu dot cn &nbsp&nbsp -->
-                      Email: zhoutao2015@zju.edu.cn
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td
-                    style="padding: 20px; width: 100%; vertical-align: middle"
-                  >
-                    <heading>About Me</heading>
-                    <p>
+const HIGHLIGHT_NAME = "tao zhou";
 
-                      Tao Zhou is currently pursuing his Doctor&rsquo;s degree in College of Information Science & Electronic Engineering with Zhejiang University in Hangzhou, China,
-                      under the (co-)supervision of <a href="https://person.zju.edu.cn/en/yeqi" style="color:#0000FF;">Qi Ye</a>,
-                      <a href="https://whluo.github.io/" style="color:#0000FF;">Wenhan Luo</a>,
-                      and <a href="https://person.zju.edu.cn/en/shizg" style="color:#0000FF;">Zhiguo Shi</a>.
-                      He obtained his Bachelor&rsquo;s degree from Zhejiang University in 2019.
+// Do not touch the code below
 
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+// Convert PUBLICATIONS to HTML table
+document.addEventListener("DOMContentLoaded", (ev) => {
+  const tbody = document.createElement("tbody");
+  const rows = PUBLICATIONS.map((data) => {
+    const row = document.createElement("tr");
+    row.append(createImageCell(data.image), createContentCell(data));
+    return row;
+  });
+  tbody.append(...rows);
+  document.querySelector("#pub-list").append(tbody);
+});
 
-                        <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td
-                    style="padding: 20px; width: 100%; vertical-align: middle"
-                  >
-                    <heading>Research Interest</heading>
-                    <p>
+// Functions to create HTML elements
+function createImageCell(link) {
+  const cell = document.createElement("td");
+  cell.style.padding = "10px";
+  cell.style.width = "30%";
+  cell.style.verticalAlign = "middle";
+  const img = document.createElement("img");
+  img.src = link;
+  img.style.width = "100%";
+  cell.append(img);
+  return cell;
+}
 
-                    My research experience lies in 2D perceptual tasks (including detection, multi-object tracking,
-                      and video object segmentation). I plan to incorporate foundation models and generative models in
-                      my future research.
+function createContentCell({ title, authors, conference, links, badges }) {
+  const cell = document.createElement("td");
+  cell.style.padding = "20px";
+  cell.style.width = "70%";
+  cell.style.verticalAlign = "middle";
+  const titleElem = document.createElement("papertitle");
+  titleElem.textContent = title;
+  const authorsElem = createAuthorElement(authors);
+  const conferenceElem = document.createElement("em");
+  conferenceElem.textContent = conference;
+  const badgesElem = createBadgesElement(badges);
+  const linksElem = createLinksElement(links);
+  const elements = [
+    titleElem,
+    document.createElement("br"),
+    authorsElem,
+    document.createElement("br"),
+    conferenceElem,
+    badgesElem,
+    document.createElement("br"),
+    linksElem,
+  ].filter((elem) => elem);
+  cell.append(...elements);
+  return cell;
+}
 
+function createAuthorElement(authors) {
+  if (!authors) {
+    return null;
+  }
+  const frag = document.createDocumentFragment();
+  const elements = authors.split(/[,;]/g).map((author) => {
+    const authorText = author.trim();
+    if (authorText.toLowerCase() === HIGHLIGHT_NAME) {
+      const authorElem = document.createElement("strong");
+      authorElem.textContent = authorText;
+      return authorElem;
+    }
+    return authorText;
+  });
+  for (let i = 0; i < elements.length; i++) {
+    frag.append(elements[i]);
+    if (i !== elements.length - 1) {
+      frag.append(", ");
+    }
+  }
+  return frag;
+}
 
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+function createBadgesElement(badges) {
+  if (!badges) {
+    return null;
+  }
+  const frag = document.createDocumentFragment();
+  const textElem = document.createElement("span");
+  textElem.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;";
+  frag.append(textElem);
+  frag.append(
+    ...badges.map((badge) => {
+      const badgeElem = document.createElement("span");
+      badgeElem.classList.add("badge");
+      badgeElem.textContent = badge;
+      return badgeElem;
+    })
+  );
+  return frag;
+}
 
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td
-                    style="padding: 20px; width: 100%; vertical-align: middle"
-                  >
-                    <heading>Education</heading>
-                    <p>
-
-                  <p align="justify">2015.08 - 2019.06 <strong>Bachelor of Science</strong>, College of Information Science & Electronic Engineering, Zhejiang University.</p>
-                  <p align="justify">2018.07 - 2018.09 <strong>Summer Intern</strong>, School of Computing, National University of Singapore.</p>
-                  <p align="justify">2019.09 - Current <strong>Ph.D Student</strong>, College of Information Science & Electronic Engineering, Zhejiang University.</p>
-
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td
-                    style="padding: 20px; width: 100%; vertical-align: middle"
-                  >
-                    <heading>Selected Publications</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table
-              id="pub-list"
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            ></table>
-
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td style="padding: 0px">
-                    <br />
-                    <p style="text-align: right; font-size: small">
-                      Last updated: Oct 16, 2023
-                      <br />Template borrowed from
-                      <a href="https://jonbarron.info/">Jon Barron</a>.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
+function createLinksElement(links) {
+  if (!links) {
+    return null;
+  }
+  const frag = document.createDocumentFragment();
+  for (const [name, link] of Object.entries(links)) {
+    if (!link) {
+      continue;
+    }
+    const elem = document.createElement("a");
+    elem.href = link;
+    elem.textContent = "[" + name + "]";
+    const textElem = document.createElement("span");
+    textElem.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;";
+    frag.append(elem, textElem);
+  }
+  return frag;
+}
