@@ -23,7 +23,7 @@ const PUBLICATIONS = [
     title:
       "APPTracker: Improving Tracking Multiple Objects in Low-Frame-Rate Videos",
     authors: "Tao Zhou, Wenhan Luo, Zhiguo Shi, Jiming Chen, Qi Ye",
-    image: "https://infzhou.github.io/appTracker/resources/Fig2_pipeline.png",
+    image: "/resource/APPTrack_Demo.gif",
     conference: "ACM MM 2022",
     links: {
       "project page": "https://infzhou.github.io/appTracker/",
@@ -40,7 +40,7 @@ const PUBLICATIONS = [
       "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
     authors:
       "Tao Zhou, Qi Ye, Yuyi Sun, Haizhou Ran, Zhiguo Shi, Jiming Chen",
-    image: "/resource/APPTrack_Demo.gif",
+    image: "",
     conference: "Submitted to IJCV, under review.",
     links: {
       "project page": "",
@@ -50,7 +50,7 @@ const PUBLICATIONS = [
       video: "",
       code: "",
     },
-    badges: ["Best Paper Award"],
+    badges: [""],
   },
   {
     title:
