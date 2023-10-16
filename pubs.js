@@ -50,17 +50,17 @@ const PUBLICATIONS = [
       video: "",
       code: "",
     },
-    badges: [""],
+    badges: [],
   },
   {
     title:
       "Gateway Planning for Hybrid LoRa Networks.",
     authors:
       "Tao Zhou, Yuyi Sun, Shibo He, Zhiguo Shi, Jiming Chen, Zhen Tao",
-    image: "",
+    image: "/resource/ithings_figure.png",
     conference: "IEEE International Conference on Internet of Things (iThings), 2019",
     links: {
-      "project page": "/resource/ithings_figure.png",
+      "project page": "",
       arxiv: "",
       pdf: "https://ieeexplore.ieee.org/abstract/document/8875418",
       supp: "",
