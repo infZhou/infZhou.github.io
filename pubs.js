@@ -37,23 +37,6 @@ const PUBLICATIONS = [
   },
   {
     title:
-      "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
-    authors:
-      "Tao Zhou, Qi Ye, Yuyi Sun, Haizhou Ran, Zhiguo Shi, Jiming Chen",
-    image: "",
-    conference: "Submitted to IJCV, under review.",
-    links: {
-      "project page": "",
-      arxiv: "",
-      pdf: "",
-      supp: "",
-      video: "",
-      code: "",
-    },
-    badges: [],
-  },
-  {
-    title:
       "Gateway Planning for Hybrid LoRa Networks.",
     authors:
       "Tao Zhou, Yuyi Sun, Shibo He, Zhiguo Shi, Jiming Chen, Zhen Tao",
@@ -69,7 +52,23 @@ const PUBLICATIONS = [
     },
     badges: ["Best Paper Award"],
   },
-
+{
+    title:
+      "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
+    authors:
+      "Tao Zhou, Qi Ye, Yuyi Sun, Haizhou Ran, Zhiguo Shi, Jiming Chen",
+    image: "",
+    conference: "Submitted to IJCV, under review.",
+    links: {
+      "project page": "",
+      arxiv: "",
+      pdf: "",
+      supp: "",
+      video: "",
+      code: "",
+    },
+    badges: [],
+  },
 ];
 
 const HIGHLIGHT_NAME = "tao zhou";
