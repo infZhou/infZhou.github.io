@@ -6,7 +6,7 @@ const PUBLICATIONS = [
     title:
       "F&F Attack: Adversarial Attack against Multiple Object Trackers by Inducing False Negatives and False Positives",
     authors:
-      "Tao Zhou, Wenhan Luo, Qi Ye, Kaihao Zhang, Zhiguo Shi, Jiming Chen",
+      "Tao Zhou, Qi Ye, Wenhan Luo, Kaihao Zhang, Zhiguo Shi, Jiming Chen",
     image: "/resource/FnFAttack_Demo.gif",
     conference: "ICCV 2023",
     links: {
@@ -56,7 +56,7 @@ const PUBLICATIONS = [
     title:
       "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
     authors:
-      "Tao Zhou, Qi Ye, Yuyi Sun, Haizhou Ran, Zhiguo Shi, Jiming Chen",
+      "Tao Zhou, Qi Ye, Wenhan Luo, Haizhou Ran, Zhiguo Shi, Jiming Chen",
     image: "",
     conference: "Submitted to IJCV, under review.",
     links: {
