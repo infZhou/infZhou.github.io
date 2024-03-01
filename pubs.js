@@ -7,7 +7,7 @@ const PUBLICATIONS = [
     authors:
       "Tao Zhou, Wenhan Luo, Qi Ye, Zhiguo Shi, Jiming Chen",
     image: "/resource/SAM-PD.jpg",
-    conference: "Comming soon.",
+    conference: "To be submitted, coming soon.",
     links: {
       "project page": "",
       arxiv: "",
