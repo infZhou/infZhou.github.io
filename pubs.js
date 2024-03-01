@@ -69,6 +69,23 @@ const PUBLICATIONS = [
     },
     badges: [],
   },
+{
+    title:
+      "SAM-PD: How Far Can SAM Take Us in Tracking and Segmenting Anything in Videos by Prompt Denoising.",
+    authors:
+      "Tao Zhou, Wenhan Luo, Qi Ye, Zhiguo Shi, Jiming Chen",
+    image: "",
+    conference: "Comming soon.",
+    links: {
+      "project page": "",
+      arxiv: "",
+      pdf: "",
+      supp: "",
+      video: "",
+      code: "",
+    },
+    badges: [],
+  },
 ];
 
 const HIGHLIGHT_NAME = "tao zhou";
