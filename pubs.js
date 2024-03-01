@@ -1,7 +1,23 @@
 // Modify the `PUBLICATIONS` object
 
 const PUBLICATIONS = [
-
+{
+    title:
+      "TPGP: Temporal-Parametric Optimization with Deep Grasp Prior for Dexterous Motion Planning",
+    authors:
+      "Haoming Li, Shijian Jiang,  Qingtao Liu, Tao Zhou, Xiang Li, Yang Zhou, Yuchi Huo, Jiming Chen, Qi Ye",
+    image: "/resource/ICRA24.gif",
+    conference: "ICRA 2024",
+    links: {
+      "project page": "",
+      arxiv: "",
+      pdf: "",
+      supp: "",
+      video: "",
+      code: "",
+    },
+    badges: [],
+  },
   {
     title:
       "F&F Attack: Adversarial Attack against Multiple Object Trackers by Inducing False Negatives and False Positives",
@@ -18,6 +34,23 @@ const PUBLICATIONS = [
       code: "https://github.com/infZhou/FnF_Attack",
     },
     badges: ["CCF A"],
+  },
+  {
+    title:
+      "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
+    authors:
+      "Tao Zhou, Qi Ye, Wenhan Luo, Haizhou Ran, Zhiguo Shi, Jiming Chen",
+    image: "/resource/APPTrack+_Demo.gif",
+    conference: "Submitted to IJCV, under review.",
+    links: {
+      "project page": "",
+      arxiv: "",
+      pdf: "",
+      supp: "",
+      video: "",
+      code: "",
+    },
+    badges: [],
   },
   {
     title:
@@ -54,46 +87,11 @@ const PUBLICATIONS = [
   },
 {
     title:
-      "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
-    authors:
-      "Tao Zhou, Qi Ye, Wenhan Luo, Haizhou Ran, Zhiguo Shi, Jiming Chen",
-    image: "/resource/APPTrack+_Demo.gif",
-    conference: "Submitted to IJCV, under review.",
-    links: {
-      "project page": "",
-      arxiv: "",
-      pdf: "",
-      supp: "",
-      video: "",
-      code: "",
-    },
-    badges: [],
-  },
-{
-    title:
       "SAM-PD: How Far Can SAM Take Us in Tracking and Segmenting Anything in Videos by Prompt Denoising",
     authors:
       "Tao Zhou, Wenhan Luo, Qi Ye, Zhiguo Shi, Jiming Chen",
     image: "/resource/SAM-PD.jpg",
     conference: "Comming soon.",
-    links: {
-      "project page": "",
-      arxiv: "",
-      pdf: "",
-      supp: "",
-      video: "",
-      code: "",
-    },
-    badges: [],
-  },
-  
-{
-    title:
-      "TPGP: Temporal-Parametric Optimization with Deep Grasp Prior for Dexterous Motion Planning",
-    authors:
-      "Haoming Li, Shijian Jiang,  Qingtao Liu, Tao Zhou, Xiang Li, Yang Zhou, Yuchi Huo, Jiming Chen, Qi Ye",
-    image: "/resource/ICRA24.gif",
-    conference: "ICRA 2024",
     links: {
       "project page": "",
       arxiv: "",
