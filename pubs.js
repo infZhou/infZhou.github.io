@@ -57,7 +57,7 @@ const PUBLICATIONS = [
       "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
     authors:
       "Tao Zhou, Qi Ye, Wenhan Luo, Haizhou Ran, Zhiguo Shi, Jiming Chen",
-    image: "",
+    image: "/resource/APPTrack+_Demo.gif",
     conference: "Submitted to IJCV, under review.",
     links: {
       "project page": "",
@@ -74,7 +74,7 @@ const PUBLICATIONS = [
       "SAM-PD: How Far Can SAM Take Us in Tracking and Segmenting Anything in Videos by Prompt Denoising",
     authors:
       "Tao Zhou, Wenhan Luo, Qi Ye, Zhiguo Shi, Jiming Chen",
-    image: "",
+    image: "/resource/SAM-PD.jpg",
     conference: "Comming soon.",
     links: {
       "project page": "",
@@ -92,7 +92,7 @@ const PUBLICATIONS = [
       "TPGP: Temporal-Parametric Optimization with Deep Grasp Prior for Dexterous Motion Planning",
     authors:
       "Haoming Li, Shijian Jiang,  Qingtao Liu, Tao Zhou, Xiang Li, Yang Zhou, Yuchi Huo, Jiming Chen, Qi Ye",
-    image: "",
+    image: "/resource/ICRA24.gif",
     conference: "ICRA 2024",
     links: {
       "project page": "",
