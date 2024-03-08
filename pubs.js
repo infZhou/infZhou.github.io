@@ -7,10 +7,10 @@ const PUBLICATIONS = [
     authors:
       "Tao Zhou, Wenhan Luo, Qi Ye, Zhiguo Shi, Jiming Chen",
     image: "/resource/SAM-PD.jpg",
-    conference: "To be submitted, coming soon.",
+    conference: "arXiv preprint",
     links: {
       "project page": "",
-      arxiv: "",
+      arxiv: "https://arxiv.org/abs/2403.04194",
       pdf: "",
       supp: "",
       video: "",
