@@ -67,7 +67,7 @@ const PUBLICATIONS = [
       video: "",
       code: "",
     },
-    badges: [""],
+    badges: [],
   },
   {
     title:
