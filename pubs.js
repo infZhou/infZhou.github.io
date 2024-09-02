@@ -58,7 +58,7 @@ const PUBLICATIONS = [
     authors:
       "Tao Zhou, Qi Ye, Wenhan Luo, Haizhou Ran, Zhiguo Shi, Jiming Chen",
     image: "/resource/APPTrack+_Demo.gif",
-    conference: "submitted to IJCV 2024, under review",
+    conference: "IJCV 2024 (to appear)",
     links: {
       "project page": "",
       arxiv: "",
@@ -67,7 +67,7 @@ const PUBLICATIONS = [
       video: "",
       code: "",
     },
-    badges: [],
+    badges: ["CCF A"],
   },
   {
     title:
