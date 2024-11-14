@@ -54,7 +54,7 @@ const PUBLICATIONS = [
   },
   {
     title:
-      "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking.",
+      "APPTracker+: Displacement Uncertainty for Occlusion Handling in Low-Frame-Rate Multiple Object Tracking",
     authors:
       "Tao Zhou, Qi Ye, Wenhan Luo, Haizhou Ran, Zhiguo Shi, Jiming Chen",
     image: "/resource/APPTrack+_Demo.gif",
@@ -87,7 +87,7 @@ const PUBLICATIONS = [
   },
   {
     title:
-      "Gateway Planning for Hybrid LoRa Networks.",
+      "Gateway Planning for Hybrid LoRa Networks",
     authors:
       "Tao Zhou, Yuyi Sun, Shibo He, Zhiguo Shi, Jiming Chen, Zhen Tao",
     image: "/resource/ithings_figure.png",
