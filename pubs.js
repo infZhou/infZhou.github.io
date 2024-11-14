@@ -58,11 +58,11 @@ const PUBLICATIONS = [
     authors:
       "Tao Zhou, Qi Ye, Wenhan Luo, Haizhou Ran, Zhiguo Shi, Jiming Chen",
     image: "/resource/APPTrack+_Demo.gif",
-    conference: "IJCV 2024 (to appear)",
+    conference: "IJCV 2024",
     links: {
       "project page": "",
       arxiv: "",
-      pdf: "",
+      pdf: "https://infZhou.github.io/folder/APPTracker_Plus_Displacement_Uncertainty_for_Occlusion_Handling_in_Low-Frame-Rate_Multiple_Object_Tracking.pdf",
       supp: "",
       video: "",
       code: "",
